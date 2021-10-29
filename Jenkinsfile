@@ -2,13 +2,13 @@
 
 //Declarative 
 pipeline {
-	//agent any 
-	agent { docker { image 'node:12.18.1'} }
+	agent any 
+	//agent { docker { image 'node:12.18.1'} }
 	stages{
 		stage('Build') {
 			steps {
 			//sh "mvn --version"
-			sh "node --version"
+			//sh "node --version"
 			echo "Build"
 			}
 	}
